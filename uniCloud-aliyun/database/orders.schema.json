@@ -1,0 +1,32 @@
+// 文档教程: https://uniapp.dcloud.net.cn/uniCloud/schema
+{
+	"bsonType": "object",
+	"required": [],
+	"permission": {
+		"read": false,
+		"create": false,
+		"update": false,
+		"delete": false
+	},
+	"properties": {
+		"_id": {
+			"description": "ID，系统自动生成"
+		},
+		"system_order_id":{
+			"description": "系统订单号",
+			"bsonType": "string"
+		},
+		"pay_transaction_id":{
+			"description": "三方订单号",
+			"bsonType": "string"
+		},
+		"amount":{
+			"bsonType": "int",
+			"description": "金额"
+		},
+		"status":{
+			"bsonType": "int",
+			"description": "0-待支付 1-支付成功"
+		}
+	}
+}
